@@ -1,0 +1,325 @@
+html {
+  font-family: "Barlow", "Montserrat", "Roboto", sans-serif;
+}
+body {
+  background-image: url(../img/fondo.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.custom-input-file {
+  background-color: #36ae7c;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  min-height: 15px;
+  overflow: hidden;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  width: 100px;
+  margin-top: 10px;
+}
+.custom-input-file .input-file {
+  border: 10000px solid transparent;
+  cursor: pointer;
+  font-size: 10000px;
+  margin: 0;
+  opacity: 0;
+  outline: 0 none;
+  padding: 0;
+  position: absolute;
+  right: -1000px;
+  top: -1000px;
+}
+
+.container {
+  width: 420px;
+  background: #ffffff;
+  text-align: center;
+  padding: 30px 35px 0 35px;
+  height: 550px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 50px 30px;
+}
+.container header {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container .form-princ {
+  width: 100%;
+  overflow: hidden;
+}
+.form-princ form {
+  display: flex;
+  width: 500%;
+}
+.form-princ form .pagina {
+  width: 20%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-princ form .pagina .title {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-princ form .pagina .campo {
+  height: 35px;
+  width: 350px;
+  margin: 20px 0;
+  display: flex;
+  position: relative;
+}
+
+.form-princ .pagina .campo .label {
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: italic;
+  float: left;
+  text-align: left;
+  width: 100%;
+}
+
+.form-princ .pagina .campo input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 2px solid #1a3336;
+  background: transparent;
+  outline: none;
+  color: #1a3336;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.form-princ .pagina .campo button {
+  width: 100%;
+  height: calc(100% + 5px);
+  margin-top: -20px;
+  border: none;
+  background: #1a3336;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form-princ form .pagina .btns button {
+  margin-top: -20px !important;
+}
+.form-princ .pagina .btns button.cont {
+  margin-right: 3px;
+  font-size: 17px;
+}
+.form-princ .pagina .btns button.sig {
+  margin-left: 3px;
+}
+.container .progress-bar {
+  display: flex;
+  margin: 8px;
+}
+
+.container .progress-bar .paso {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.progress-bar .paso .num {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #1a3336;
+  background: #1a3336;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  transition: 0.2s;
+}
+.progress-bar .paso .num.active {
+  border-color: #36ae7c;
+  background: #36ae7c;
+}
+.progress-bar .paso .num span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar .paso .num.active span {
+  display: none;
+}
+.progress-bar .paso .check {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  font-size: 17px;
+  transform: translate(-50%, -50%);
+}
+.progress-bar .paso .check.active {
+  display: block;
+  color: #fff; /*Cambiar a blanco*/
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: transparent;
+  background-image: none;
+}
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  display: flex;
+  height: 2em;
+  line-height: 2;
+  background: transparent;
+  overflow: hidden;
+  border-radius: 0.75em;
+}
+select {
+  flex: 1;
+  padding: 0 0.5em;
+  color: #1a3336;
+  cursor: pointer;
+  font-size: 1em;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 0.8em;
+  background: #1a3336;
+  color: #fff;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+.select:hover::after {
+  color: #fff;
+}
+
+.login-box {
+  width: 420px;
+  height: 550px;
+  background: #fff;
+  color: #1a3336;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 50px 30px;
+}
+.login-box .user {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: calc(50% - 50px);
+}
+.login-box h2 {
+  margin: 0;
+  padding: 0 0 10px;
+  text-align: center;
+  font-size: 22px;
+  top: 10%;
+}
+.login-box h1 {
+  margin: 0;
+  padding: 10px 0 20px;
+  text-align: center;
+  font-size: 22px;
+  top: 10%;
+  margin-top: 50px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+.login-box input {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  border: none;
+  border-bottom: 2px solid #1a3336;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #1a3336;
+  font-size: 16px;
+}
+input[type="submit"] {
+  cursor: pointer;
+}
+.option {
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.login-box input[type="submit"] {
+  border: #17373b;
+  outline: none;
+  height: 40px;
+  background-color: #1a3336;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+}
+.login-box h2 {
+  margin: 0;
+  text-align: top;
+  font-size: 22px;
+}
+.btn-sesion {
+  /* width: 10px; */
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+  color: #000;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+.quitar {
+  color: #1a3336;
+  font-weight: bolder;
+}
+.login-box p {
+  font-weight: bolder;
+  color: #1a3336;
+  text-align: center;
+}
